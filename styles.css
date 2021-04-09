@@ -344,6 +344,20 @@ div.footer h6 {
   font-size: 1rem;
   padding-top: 6rem;
 }
+.active{
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 2vw;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.active a:hover {
+  color: #fff;
+  background:#304353;
+  padding: 0.5rem;
+}
 
 @media screen and (max-width: 430px) {
   div.nav-bar {

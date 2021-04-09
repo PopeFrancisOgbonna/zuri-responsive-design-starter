@@ -11,7 +11,7 @@
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li class=""><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
@@ -103,5 +103,16 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <script>
+        const nav = document.querySelectorAll('li');
+        nav.forEach((navigation, index) =>{
+            navigation.classList.remove('active'); 
+            navigation.addEventListener('click', (e) =>{  
+               e.preventDefault();
+                e.target.classList.toggle('active');
+            });
+        })
+    </script>
 </body>
 </html>
